@@ -9,7 +9,7 @@ enum Tier {
    private Tier(float factor) {
         this.factor = factor;
     }
-    
+
     public int calculateTotalPoints(float amountSpent) {
         final float earnedPoints = amountSpent / AMOUNT_PER_POINT;
         return (int)(earnedPoints + factor* earnedPoints);
